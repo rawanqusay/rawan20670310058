@@ -6,19 +6,16 @@
              BackgroundColor="LightSkyBlue">
     <StackLayout Padding="20" Spacing="15">
 
-        <!-- Kredi Tutarı Girişi -->
+        
         <Entry Placeholder="Kredi Tutarı" x:Name="PrincipalEntry" Keyboard="Numeric" 
                BackgroundColor="White" TextColor="Black"/>
 
-        <!-- Faiz Oranı Girişi -->
         <Entry Placeholder="Faiz Oranı (%)" x:Name="InterestRateEntry" Keyboard="Numeric" 
                BackgroundColor="White" TextColor="Black"/>
 
-        <!-- Vade (Ay) Girişi -->
         <Entry Placeholder="Vade (Ay)" x:Name="MonthsEntry" Keyboard="Numeric" 
                BackgroundColor="White" TextColor="Black"/>
 
-        <!-- Kredi Türü Seçimi -->
         <Label Text="Kredi Türü Seçimi" TextColor="Navy" FontSize="Medium"/>
         <Picker x:Name="LoanTypePicker" BackgroundColor="White" TextColor="Black">
             <Picker.ItemsSource>
@@ -31,12 +28,11 @@
             </Picker.ItemsSource>
         </Picker>
 
-        <!-- Hesaplama Butonu -->
+        
         <Button Text="Hesapla" Clicked="HesaplamaButton_Clicked" 
                 BackgroundColor="SteelBlue" TextColor="White" 
                 FontAttributes="Bold" CornerRadius="10"/>
 
-        <!-- Sonuç Etiketleri -->
         <Label Text="Aylık Taksit: " x:Name="MonthlyPaymentLabel" TextColor="Navy" FontSize="Medium"/>
         <Label Text="Toplam Faiz: " x:Name="TotalInterestLabel" TextColor="Navy" FontSize="Medium"/>
         <Label Text="Toplam Ödeme: " x:Name="TotalPaymentLabel" TextColor="Navy" FontSize="Medium"/>

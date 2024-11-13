@@ -5,7 +5,7 @@
              BackgroundColor="LightBlue">
 
     <ContentPage.Resources>
-        <!-- Stillerin tanımı -->
+        
         <Style x:Key="NameLabelStyle" TargetType="Label">
             <Setter Property="FontSize" Value="35" />
             <Setter Property="FontAttributes" Value="Bold" />
@@ -31,26 +31,22 @@
     <ScrollView>
         <VerticalStackLayout Padding="30,0" Spacing="25">
 
-            <!-- Profil Fotoğrafı -->
             <Image
                 Source="rawan.jpeg"
                 HeightRequest="600"
                 Aspect="AspectFit"
                 SemanticProperties.Description="Rawan's profile picture" />
 
-            <!-- Ad Soyad -->
             <Label
                 Text="Rawan Qusay"
                 Style="{StaticResource NameLabelStyle}"
                 SemanticProperties.HeadingLevel="Level1" />
 
-            <!-- Üniversite Bilgisi -->
             <Label
                 Text="Bartin Universitesi Bilgisayar Mühendisliği"
                 Style="{StaticResource UniversityLabelStyle}"
                 SemanticProperties.HeadingLevel="Level2" />
 
-            <!-- Ödev Başlığı -->
             <Label
                 Text="Ödev-1"
                 Style="{StaticResource AssignmentLabelStyle}"
