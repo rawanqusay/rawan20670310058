@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="rawan20670310058.VucutKitleIndexi"
+             Title="Vücut Kitle İndeksi"
+             BackgroundColor="LightSkyBlue">
+
+    <StackLayout Padding="20" Spacing="15">
+
+        <!-- Kilo Girişi -->
+        <Label Text="Kilo (kg):" TextColor="Navy" FontSize="Medium"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Kilo Entry -->
+            <Entry Placeholder="Kilo giriniz" 
+                   x:Name="WeightEntry" 
+                   Grid.Row="0" 
+                   BackgroundColor="White" 
+                   TextColor="Black" 
+                   TextChanged="WeightEntry_TextChanged"/>
+
+            <!-- Kilo Slider -->
+            <Slider Minimum="0" 
+                    Maximum="200" 
+                    Value="70" 
+                    x:Name="WeightSlider" 
+                    ValueChanged="WeightSlider_ValueChanged" 
+                    Grid.Row="1" 
+                    HorizontalOptions="FillAndExpand" 
+                    ThumbColor="SteelBlue"/>
+        </Grid>
+
+        <!-- Boy Girişi -->
+        <Label Text="Boy (cm):" TextColor="Navy" FontSize="Medium"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <!-- Boy Entry -->
+            <Entry Placeholder="Boy giriniz" 
+                   x:Name="HeightEntry" 
+                   Grid.Row="0" 
+                   BackgroundColor="White" 
+                   TextColor="Black" 
+                   TextChanged="HeightEntry_TextChanged"/>
+
+            <!-- Boy Slider -->
+            <Slider Minimum="0" 
+                    Maximum="300" 
+                    Value="170" 
+                    x:Name="HeightSlider" 
+                    ValueChanged="HeightSlider_ValueChanged" 
+                    Grid.Row="1" 
+                    HorizontalOptions="FillAndExpand" 
+                    ThumbColor="SteelBlue"/>
+        </Grid>
+
+        <!-- Hesapla Butonu -->
+        <Button Text="Hesapla" 
+                Clicked="CalculateButton_Clicked1" 
+                BackgroundColor="SteelBlue" 
+                TextColor="White" 
+                FontAttributes="Bold" 
+                CornerRadius="10"/>
+
+        <!-- Sonuç Etiketleri -->
+        <Label Text="VKI: " 
+               x:Name="VkiLabel" 
+               TextColor="Navy" 
+               FontSize="Medium"/>
+        <Label Text="Durum: " 
+               x:Name="StatusLabel" 
+               TextColor="Navy" 
+               FontSize="Medium"/>
+    </StackLayout>
+</ContentPage>

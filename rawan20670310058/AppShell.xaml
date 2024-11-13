@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="rawan20670310058.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:rawan20670310058"
+    Shell.FlyoutBehavior="Flyout"
+    Title="rawan20670310058">
+
+    <ShellContent
+        Icon="house.png"
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    <ShellContent 
+        Icon="calculatorr.png"
+        Title="KrediHesaplama"
+        ContentTemplate="{DataTemplate local:KrediHesaplama}"
+        Route="Kredi Hesaplama" />
+    <ShellContent 
+        Icon="healthcare.png"
+    Title="Vucut Kitle Indeksi"
+    ContentTemplate="{DataTemplate local:VucutKitleIndexi}"
+    Route="Vucut Kitle Indeksi" />
+    <ShellContent 
+        Icon="color.png"
+    Title="Renk Secici"
+    ContentTemplate="{DataTemplate local:RenkSecici}"
+    Route="Renk Secici" />
+    <ShellContent 
+     Icon="task.png"
+     Title="Yapilacaklar"
+     ContentTemplate="{DataTemplate local:Yapilacaklar}"
+     Route="Yapilacaklar" />
+
+</Shell>
